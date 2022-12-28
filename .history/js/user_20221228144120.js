@@ -14,9 +14,9 @@ var user =
             id: "USER2",
             username: "user",
             name: "Nguyễn thị Thùy Trang",
-            sdt: "0338121441",
-            email: "changchang7124@gmail",
-            address: "Tp Hồ Chí MInh",
+            sdt: "0389785322",
+            email: "vietanh7200@gmail",
+            address: "Châu Thành - Tây Ninh",
             password: "1",
             role: "user"
 

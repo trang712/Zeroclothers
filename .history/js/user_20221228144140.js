@@ -16,7 +16,7 @@ var user =
             name: "Nguyễn thị Thùy Trang",
             sdt: "0338121441",
             email: "changchang7124@gmail",
-            address: "Tp Hồ Chí MInh",
+            address: " - Tây Ninh",
             password: "1",
             role: "user"
 
