@@ -3,11 +3,6 @@
 
 <head>
     <title>Store</title>
-    <!-- share button -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0&appId=679374937196134&autoLogAppEvents=1" nonce="c7FEqUbX"></script>
-    <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0"></script>
     </script>
      <!-- SEO -->
     <meta charset="UTF-8">
@@ -24,6 +19,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <div id="fb-root"></div>
+    <!-- share button -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0&appId=679374937196134&autoLogAppEvents=1" nonce="c7FEqUbX"></script>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0"></script>
     <script>
@@ -33,9 +31,43 @@
         })
     </script>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8680689f8baf8a345a2d2de98/8cf144c9a110e945c47b278fa.js");</script>
+    <!-- Manychat -->
+<script src="//widget.manychat.com/111105508515893.js" defer="defer"></script>
+<script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+
 </head>
 
 <body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111105508515893");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- --header-- -->
     <div class="container-fluid header">
         <div class="container-fluid fixed-top bg-light">
@@ -148,8 +180,10 @@
     <div class="container-fluid mt-5 mb-5">
         <div class="container product">
             <div class="h3 mb-5">Sản phẩm bán chạy</div>
-            <div class="fb-share-button" data-href="https://zeroclothers.vercel.app/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fzeroclothers.vercel.app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
+            
             <div class="row" id="banchay">
+
+
             </div>
         </div>
     </div>
